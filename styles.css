@@ -80,4 +80,13 @@ a{
 
 .cake-group{
     border: 2px solid green;
+}.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap; /* Ensures images do not wrap */
+    gap: 10px; /* Optional: adds consistent spacing between items */
+}
+.cake-group {
+    flex: 1 0 calc(25% - 20px); /* Ensures 4 items per row with spacing accounted for */
+    max-width: 25%; /* Restricts the width of each group to fit within the row */
 }
