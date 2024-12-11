@@ -85,22 +85,22 @@ a{
 .first-row {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: nowrap; /* Ensures items stay in a row */
-    gap: 10px; /* Adds spacing between items */
+    flex-wrap: nowrap;
+    gap: 10px; 
 }
 
 .first-row .cake-group {
-    flex: 1 0 calc(25% - 20px); /* Adjusts width for 4 items per row */
-    max-width: 25%; /* Ensures consistent width */
-    text-align: center; /* Centers the text below the image */
+    flex: 1 0 calc(25% - 20px);
+    max-width: 25%;
+    text-align: center; 
 }
 
 .first-row .cake-item {
-    width: 100%; /* Ensures the image fits within the group */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .first-row .cake-text.caption {
-    margin-top: 10px; /* Adds spacing between image and text */
-    font-size: 15px; /* Matches original caption size */
+    margin-top: 10px; 
+    font-size: 15px; 
 }
