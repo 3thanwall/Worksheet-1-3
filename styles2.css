@@ -1,0 +1,12 @@
+section{
+    padding: 6px 2px 2px 8px;
+}
+
+.section-two{
+    padding: 6px 2px 2px 8px;
+    background-color: deepskyblue;
+}
+
+.cake-poster-item{
+    border: 1px solid yellow;
+}
