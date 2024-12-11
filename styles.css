@@ -80,13 +80,27 @@ a{
 
 .cake-group{
     border: 2px solid green;
-}.container {
+}
+
+.first-row {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: nowrap; /* Ensures images do not wrap */
-    gap: 10px; /* Optional: adds consistent spacing between items */
+    flex-wrap: nowrap; /* Ensures items stay in a row */
+    gap: 10px; /* Adds spacing between items */
 }
-.cake-group {
-    flex: 1 0 calc(25% - 20px); /* Ensures 4 items per row with spacing accounted for */
-    max-width: 25%; /* Restricts the width of each group to fit within the row */
+
+.first-row .cake-group {
+    flex: 1 0 calc(25% - 20px); /* Adjusts width for 4 items per row */
+    max-width: 25%; /* Ensures consistent width */
+    text-align: center; /* Centers the text below the image */
+}
+
+.first-row .cake-item {
+    width: 100%; /* Ensures the image fits within the group */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.first-row .cake-text.caption {
+    margin-top: 10px; /* Adds spacing between image and text */
+    font-size: 15px; /* Matches original caption size */
 }
